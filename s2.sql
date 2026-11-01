@@ -1,0 +1,25 @@
+CREATE DATABASE db2;
+
+USE db2;
+
+CREATE TABLE tb2(
+id INT PRIMARY KEY,
+name CHAR(30),
+age INT NOT NULL,
+salary INT 
+);
+
+INSERT INTO tb2
+VALUES
+(101,"chandan",23,45000),
+(102,"kundan",24,30000),
+(103,"minu",24,45000),
+(104,"anu",26,80000);
+
+SELECT * FROM tb2;
+SELECT name FROM tb2 WHERE salary > 40000;
+SELECT name FROM tb2 WHERE (salary > 40000) AND (age >=23);
+
+SHOW DATABASES;
+SHOW TABLES;
+
